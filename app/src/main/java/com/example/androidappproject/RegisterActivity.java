@@ -24,25 +24,19 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText emailTV, passwordTV;
     private Button regBtn;
     private ProgressBar progressBar;
-
     private ProgressDialog progressDialog;
-
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-
         mAuth = FirebaseAuth.getInstance();
 //        if (!FirebaseApp.getApps(this).isEmpty()){
 //            FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 //            FirebaseAuth.getInstance().signInAnonymously();
 //        }
-
         initializeUI();
-
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,10 +44,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
     private void registerNewUser() {
         progressBar.setVisibility(View.VISIBLE);
 
@@ -75,8 +65,6 @@ public class RegisterActivity extends AppCompatActivity {
             progressDialog.setMessage("Please wait,While we are creating Account for you...");
             progressDialog.setCanceledOnTouchOutside(true);
             progressDialog.show();
-
-
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -95,7 +83,6 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         }
                     });
-
             }
         }
 
@@ -106,13 +93,9 @@ public class RegisterActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
 
         progressDialog =new ProgressDialog(this);
-
     }
-
     public void acoount(View view) {
         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(intent);
-
     }
-
 }
