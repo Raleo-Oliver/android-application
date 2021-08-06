@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#084C6A"
+    android:weightSum="10"
+    tools:context=".AboutVaccineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="About Vaccine"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is vaccination?"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="left"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Why should I get vaccinated?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="How does a vaccine work?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="What diseases do vaccines prevent?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Why does vaccination start at such a young age?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="What diseases do vaccines prevent?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Are vaccines safe?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Are there side effects from vaccines?"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/meetToken"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:text="Find Answers"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="30dp"
+            android:drawablePadding="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:drawableTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:onClick="answer"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

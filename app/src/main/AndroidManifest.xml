@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidappproject">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidAppProject">
+         <activity android:name=".AboutVaccineActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".PersonalDetailsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VaccineRegisterActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayCodeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VaccineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".SplashScreenActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

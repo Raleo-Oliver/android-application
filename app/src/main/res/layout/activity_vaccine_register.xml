@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#084C6A"
+    android:weightSum="10"
+    tools:context=".VaccineRegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:text="Register For Vaccine"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="First Name"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:maxLength="20"
+                android:id="@+id/firstName"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:hint="First Name"
+                android:layout_margin="10dp"
+                android:paddingStart="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Second Name"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/secondName"
+                android:gravity="center_vertical"
+                android:hint="Second Name"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Gender"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/gender"
+                android:gravity="center_vertical"
+                android:hint="Male or Female"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Date of Birth"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/dateOfBirth"
+                android:gravity="center_vertical"
+                android:hint="Date of Birth"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="District"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/district"
+                android:gravity="center_vertical"
+                android:hint="Enter District Name"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Phone Number"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/phoneNumber"
+                android:gravity="center_vertical"
+                android:hint="Enter Phone Number"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Email Address"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:id="@+id/emailAddress"
+                android:gravity="center_vertical"
+                android:hint="Enter Email Address"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:inputType="textMultiLine"
+                android:textAllCaps="false"
+                />
+
+
+            <TextView
+                android:id="@+id/meetToken"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:text="Submit"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="30dp"
+                android:drawablePadding="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:drawableTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:onClick="submit"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
