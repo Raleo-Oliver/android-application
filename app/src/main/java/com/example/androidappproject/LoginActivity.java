@@ -21,13 +21,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-
     private EditText emailTV, passwordTV;
     private Button loginBtn;
     private ProgressBar progressBar;
-
     private ProgressDialog progressDialog;
-
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +64,6 @@ public class LoginActivity extends AppCompatActivity {
             progressDialog.setMessage("Please wait,While we are checking your Account...");
             progressDialog.setCanceledOnTouchOutside(true);
             progressDialog.show();
-
 
             mAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
