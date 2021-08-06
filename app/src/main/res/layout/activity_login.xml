@@ -22,9 +22,7 @@
        android:layout_height="wrap_content"
        android:layout_marginTop="5dp"
        android:layout_marginBottom="15dp"
-
        />
-
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -33,7 +31,6 @@
         android:drawableLeft="@drawable/login_email_24"
         android:drawablePadding="10dp"
         />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -42,16 +39,13 @@
         android:inputType="textPassword"
         android:drawableLeft="@drawable/login_password_24"
         android:drawablePadding="10dp"
-
         />
-
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:background="#009688"
-
         />
     <TextView
         android:id="@+id/justlogin"
@@ -61,7 +55,6 @@
         android:gravity="center"
         android:textColor="#4CAF50"
         android:onClick="justLogin"
-
         />
     <ProgressBar
         android:id="@+id/progressBar"
