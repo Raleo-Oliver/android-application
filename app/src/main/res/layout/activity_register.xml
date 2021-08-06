@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".RegisterActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,20 +15,13 @@
         android:textSize="30dp"
         android:layout_marginBottom="15dp"
         android:layout_gravity="center"
-
         />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="15dp"
-
-
         />
-
-
-
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -37,7 +29,6 @@
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/login_email_24"
         android:hint="Email" />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -47,16 +38,13 @@
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/login_password_24"
         />
-
     <Button
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CREATE ACCOUNT"
         android:background="#009688"
-
         />
-
     <TextView
         android:id="@+id/haveaccount"
         android:layout_width="match_parent"
