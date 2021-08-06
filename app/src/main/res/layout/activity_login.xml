@@ -53,7 +53,6 @@
         android:background="#009688"
 
         />
-
     <TextView
         android:id="@+id/justlogin"
         android:layout_width="match_parent"
@@ -64,8 +63,6 @@
         android:onClick="justLogin"
 
         />
-
-
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
