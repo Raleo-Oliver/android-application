@@ -17,12 +17,21 @@
         android:layout_marginBottom="5dp"
         android:layout_gravity="center"
         />
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="5dp"
-       android:layout_marginBottom="15dp"
-       />
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="150dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/login_icon"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -51,10 +60,10 @@
         android:id="@+id/justlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Just Logioin"
+        android:text="Don't have Account"
         android:gravity="center"
         android:textColor="#4CAF50"
-        android:onClick="justLogin"
+        android:onClick="haveNoAccount"
         />
     <ProgressBar
         android:id="@+id/progressBar"
